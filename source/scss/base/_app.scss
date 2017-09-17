@@ -166,10 +166,6 @@ html {
     overflow:hidden;
     margin-bottom:2em;
 
-    a {
-      flex-direction: column;
-    }
-
     img {
       flex: 1;
       min-width:0;
@@ -191,9 +187,13 @@ html {
     &:hover {
       color: $primary-color;
     }
+    &.Menu-link--active {
+      font-weight: bold;
+    }
   }
 
   footer {
-    display: inline;
+    flex-wrap: wrap;
+    display: flex;
   }
 }
